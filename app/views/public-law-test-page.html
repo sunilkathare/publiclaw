@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds column-minimum">
+
+      <h1 class="heading-large">
+        Plubic Law - test page
+      </h1>
+
+      <div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+    You can be fined up to £5,000 if you don’t register.
+  </strong>
+</div>
+
+<p> &nbsp;</p>
+<blockquote class="panel panel-border-wide"> <p>Useful tips is shown here</p></blockquote>
+<details>
+
+  <summary><span class="summary">Click here to see contextual information</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <p>
+      If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.
+    </p>
+
+    <p>
+      We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.
+    </p>
+
+  </div>
+
+</details>
+
+      <ol class="task-list">
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">1. </span> Check before you start
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="eligibility-completed">
+                Check eligibility
+              </a>
+              <strong class="task-completed" id="eligibility-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="read-declaration-completed">
+                Read declaration
+              </a>
+              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">2. </span> Prepare application
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="company-information-completed">
+                Company information
+              </a>
+              <strong class="task-completed" id="company-information-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="contact-details-completed">
+                Your contact details
+              </a>
+              <strong class="task-completed" id="contact-details-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#">
+                List convictions
+              </a>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#">
+                Provide financial evidence
+              </a>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="medical-information-completed">
+                Give medical information
+              </a>
+              <strong class="task-completed" id="medical-information-completed">Completed</strong>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">3. </span> Apply
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#">
+                Submit and pay
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
