@@ -1,0 +1,433 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds column-minimum">
+
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">ALPHA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+
+
+
+
+      <h1 class="heading-large">
+        Public Law - C110A form
+      </h1>
+<h2 class="heading-small">Application for a care or supervision order and other orders under Part 4 of the Children Act 1989 or an Emergency Protection Order under section 44 of the Children Act 1989</h3>
+<hr/>
+<!-- Full name of Applicant -->
+<div class="form-group">
+  <label class="form-label" for="full-name-applicant">
+    Full Name of Applicant
+    <span class="form-hint">As shown on your birth certificate or passport</span>
+  </label>
+  <input type="text" class="form-control" id="full-name">
+</div>
+<!-- Respondent name -->
+<div class="form-group">
+  <label class="form-label" for="full-name">
+    Full Name of Respondent(s)
+    <span class="form-hint">As shown on your birth certificate or passport</span>
+  </label>
+  <textarea type="text" class="form-control" id="respondent-name"></textarea>
+</div>
+<hr/>
+<h3 class="heading-small">Summary of children’s details</h3>
+<!-- Full name -->
+<div class="form-group">
+  <label class="form-label" for="full-name">
+  Child 1 -  Full Name
+    <span class="form-hint">As shown on the birth certificate or passport</span>
+  </label>
+  <input type="text" class="form-control" id="full-name">
+</div>
+
+
+<!-- Date of birth -->
+<div class="form-group">
+  <fieldset>
+    <legend>
+      <span class="form-label">
+        What is the date of birth?
+      </span>
+      <span class="form-hint">For example, 31 3 1980</span>
+    </legend>
+    <div class="form-date">
+      <div class="form-group form-group-day">
+        <label class="form-label" for="dob-day">Day</label>
+        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+      </div>
+      <div class="form-group form-group-month">
+        <label class="form-label" for="dob-month">Month</label>
+        <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+      </div>
+      <div class="form-group form-group-year">
+        <label class="form-label" for="dob-year">Year</label>
+        <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+      </div>
+    </div>
+  </fieldset>
+</div>
+<!-- toggled content -->
+
+<div class="form-group">
+  <fieldset>
+
+    <legend>
+      <h1 class="heading-medium">
+        Is the child accommodated?
+      </h1>
+      <span class="body-text">Select all options that are relevant to you.</span>
+    </legend>
+
+
+    <div class="multiple-choice">
+      <input id="nationalities-irish" name="nationalities" type="checkbox" value="Irish">
+      <label for="nationalities-irish">No</label>
+    </div>
+    <div class="multiple-choice" data-target="example-different-country">
+      <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
+      <label for="nationalities-other">Yes</label>
+    </div>
+    <div class="panel panel-border-narrow js-hidden" id="example-different-country">
+      <label class="form-label" for="nationalities-other-country">If Yes, from what date?</label>
+
+
+      <div class="form-date">
+        <div class="form-group form-group-day">
+          <label class="form-label" for="dob-day">Day</label>
+          <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+        </div>
+        <div class="form-group form-group-month">
+          <label class="form-label" for="dob-month">Month</label>
+          <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+        </div>
+        <div class="form-group form-group-year">
+          <label class="form-label" for="dob-year">Year</label>
+          <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+        </div>
+      </div>
+
+    </div>
+
+  </fieldset>
+</div>
+
+
+
+      <div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+    You can be fined up to £5,000 if you don’t register.
+  </strong>
+</div>
+<table>
+  <caption class="heading-small">Dates and amounts</caption>
+  <tbody>
+    <tr>
+      <td>First 6 weeks</td>
+      <td>£109.80 per week</td>
+    </tr>
+    <tr>
+      <td>Next 33 weeks</td>
+      <td>£109.80 per week</td>
+    </tr>
+    <tr>
+      <td>Total estimated pay</td>
+      <td>£4,282.20</td>
+    </tr>
+    <tr>
+      <td>Tell the mother’s employer</td>
+      <td>28 days before they want to start maternity pay</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat justo id dui molestie, ut consectetur risus efficitur. Pellentesque in elit et ligula vulputate posuere.
+</p>
+
+
+<a class="button button-start" href="#" role="button">Start now</a>
+<div class="grid-row">
+  <div class="column-two-thirds">
+      <div class="js-hidden" data-module="accordion-with-descriptions">
+        <div class="subsection-wrapper">
+            <div class="subsection js-subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="understanding-user-research">Understanding user research</h2>
+                <p class="subsection__description">Introduction, user needs, users who need help online.</p>
+              </div>
+              <div class="subsection__content js-subsection-content" id="subsection_content_0">
+                <ul class="subsection__list">
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/how-user-research-improves-service-design">User research for government services: an introduction</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/start-by-learning-user-needs">Learning about users and their  needs</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/understanding-users-who-dont-use-digital-services">Understanding users who don't use digital services</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class="subsection js-subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="user-research-in-the-different-design-phases">User research in the different design phases</h2>
+                <p class="subsection__description">Discovery, alpha, beta, live.</p>
+              </div>
+              <div class="subsection__content js-subsection-content" id="subsection_content_1">
+                <ul class="subsection__list">
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/user-research-in-discovery">User research in discovery</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/user-research-in-alpha">User research in alpha</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/user-research-in-beta">User research in beta</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/user-research-in-live">User research in live</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class="subsection js-subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="preparing-for-user-research">Preparing for user research</h2>
+                <p class="subsection__description">Planning, participants, locations, recruitment.</p>
+              </div>
+              <div class="subsection__content js-subsection-content" id="subsection_content_2">
+                <ul class="subsection__list">
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/plan-user-research-for-your-service">Plan user research for your service</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/plan-round-of-user-research">Plan a round of user research</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/choose-a-location-for-user-research">Choose a location for user research</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/find-user-research-participants">Find user research participants</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/write-a-recruitment-brief">Write a recruitment brief</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/getting-users-consent-for-research">Getting users' consent for research</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/running-research-sessions-with-people-with-disabilities">Running research sessions with people with disabilities</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class="subsection js-subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="user-research-methods">User research methods</h2>
+                <p class="subsection__description">Common methods and techniques. </p>
+              </div>
+              <div class="subsection__content js-subsection-content" id="subsection_content_3">
+                <ul class="subsection__list">
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/capturing-research-questions">Capturing research questions</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/contextual-research-and-observation">Contextual research and observation</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/creating-an-experience-map">Creating an experience map</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/doing-pop-up-research">Doing pop-up research</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/researching-user-experiences">Researching user experiences</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/taking-notes-and-recording-user-research-sessions">Taking notes and recording user research sessions</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/using-in-depth-interviews">Using in-depth interviews</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/using-moderated-usability-testing">Using moderated usability testing</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class="subsection js-subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="analysing-and-sharing-findings">Analysing and sharing findings </h2>
+                <p class="subsection__description">Doing analysis, sharing what you've learned.</p>
+              </div>
+              <div class="subsection__content js-subsection-content" id="subsection_content_4">
+                <ul class="subsection__list">
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/analyse-a-research-session">Analyse a research session</a>
+                    </li>
+                    <li class="subsection__list-item">
+                      <a href="/service-manual/user-research/sharing-user-research-findings">Sharing user research findings</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+<p> &nbsp;</p>
+<blockquote class="panel panel-border-wide"> <p>Useful tips are shown here</p></blockquote>
+<details>
+
+  <summary><span class="summary">Click here to see contextual information</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <p>
+      If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.
+    </p>
+
+    <p>
+      We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.
+    </p>
+
+  </div>
+
+</details>
+
+
+<!-- Use .form-group to create spacing when wrapping label and input pairs -->
+<div class="form-group">
+  <label class="form-label" for="first-name-2">First name</label>
+  <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+</div>
+<div class="form-group">
+  <label class="form-label" for="last-name-2">Last name</label>
+  <input class="form-control" id="last-name-2" name="last-name-2" type="text">
+</div>
+
+<form>
+  <div class="form-group">
+    <fieldset class="inline">
+
+      <legend>
+        <h1 class="heading-medium">
+          Do you already have a personal user account?
+        </h1>
+      </legend>
+
+      <div class="multiple-choice">
+        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+        <label for="radio-inline-1">Yes</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+        <label for="radio-inline-2">No</label>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
+
+<div class="form-group">
+  <div class="panel panel-border-narrow">
+    <label class="form-label" for="example-phone-number">Mobile phone number</label>
+    <input class="form-control" id="example-phone-number" name="example-phone-number" type="text">
+  </div>
+</div>
+
+<input class="button" type="submit" value="Save and continue">
+
+      <ol class="task-list">
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">1. </span> Check before you start
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="eligibility-completed">
+                Check eligibility
+              </a>
+              <strong class="task-completed" id="eligibility-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="read-declaration-completed">
+                Read declaration
+              </a>
+              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">2. </span> Prepare application
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="company-information-completed">
+                Company information
+              </a>
+              <strong class="task-completed" id="company-information-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="contact-details-completed">
+                Your contact details
+              </a>
+              <strong class="task-completed" id="contact-details-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#">
+                List convictions
+              </a>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#">
+                Provide financial evidence
+              </a>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="medical-information-completed">
+                Give medical information
+              </a>
+              <strong class="task-completed" id="medical-information-completed">Completed</strong>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">3. </span> Apply
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#">
+                Submit and pay
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
