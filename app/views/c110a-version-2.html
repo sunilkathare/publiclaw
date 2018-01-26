@@ -42,116 +42,7 @@
     <span class="form-hint">Mother or Father </span>
   </label>
   <textarea type="text" class="form-control" id="respondent-name"></textarea>
-</div><hr/>
-
-<form>
-  <div class="form-group">
-    <fieldset>
-
-      <legend>
-        <h1 class="heading-small">
-        Nature of application
-        </h1>
-        <span class="body-text">What order(s) are you applying for? (tick all which apply)</span>
-      </legend>
-
-      <div class="multiple-choice" data-target="care-and-supervision">
-        <input id="radio-home-address" type="radio" name="radio-indent-group" value="Home">
-        <label for="radio-home-address">Care and supervision or other Part 4</label>
-      </div>
-
-      <div class="panel panel-border-narrow js-hidden" id="care-and-supervision">
-
-        <h2 class="heading-medium">
-          Care and supervision or other Part 4
-        </h2>
-
-        <div class="multiple-choice">
-          <input id="care" name="nationalities" type="checkbox" value="care">
-          <label for="care">Care</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="Supervision" name="Supervision" type="checkbox" value="Supervision">
-          <label for="Supervision">Supervision</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="Interim-care-order" name="Interim-care-order" type="checkbox" value="Interim care order">
-          <label for="Interim-care-order">Interim care order</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="Interim-supervision-order" name="Interim-supervision-order" type="checkbox" value="Interim-supervision-order">
-          <label for="Interim-supervision-order">Interim supervision order</label>
-        </div>
-
-
-        <div class="multiple-choice" data-target="others-2">
-          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-          <label for="Others">Other</label>
-        </div>
-        <div class="panel panel-border-narrow js-hidden" id="others-2">
-          <label class="form-label" for="other-2">Please specify</label>
-          <textarea class="form-control" type="text" id="other-2y" name="other-2"></textarea>
-        </div>
-
-<div class="panel panel-border-narrow multiple-choice">
-<hr/>
-        <legend>
-          <h1 class="heading-small">
-
-          </h1>
-          <span class="body-text">Is the Local Authority considering adoption?</span>
-        </legend>
-
-        <div class="multiple-choice" >
-          <input id="radio-adoption" type="radio" name="radio-indent-group-1" value="yes">
-          <label for="radio-adoption">Yes</label>
-        </div>
-        <div class="multiple-choice" >
-          <input id="radio-adoption" type="radio" name="radio-indent-group-1" value="No">
-          <label for="radio-adoption">No</label>
-        </div>
 </div>
-
-
-</div>
-      <div class="multiple-choice" data-target="emergency-protection-order">
-        <input id="radio-other-address" type="radio" name="radio-indent-group" value="Other">
-        <label for="radio-other-address">Emergency Proetection</label>
-      </div>
-
-      <div class="panel panel-border-narrow js-hidden" id="emergency-protection-order">
-
-        <div class="multiple-choice">
-          <input id="emg-1" name="emg-1" type="checkbox" value="emg-1">
-          <label for="emg-1">information on the whereabouts of the child[ren]
-(Section 48(1) Children Act 1989).</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="emg-2" name="emg-2" type="checkbox" value="emg-2">
-          <label for="emg2">authorisation for entry of premises
-(Section 48(3) Children Act 1989).</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="emg-3" name="emg-3" type="checkbox" value="emg-3">
-          <label for="emg-3">authorisation to search for another child on the
-premises (Section 48(4) Children Act 1989).</label>
-        </div>
-
-        <div class="multiple-choice" data-target="others-3">
-          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-          <label for="Others">Other</label>
-        </div>
-        <div class="panel panel-border-narrow js-hidden" id="others-3">
-          <label class="form-label" for="other-3">Please specify</label>
-          <textarea class="form-control" type="textarea" id="other-3" name="other-3"> </textarea>
-        </div>
-
-
-      </div>
-    </fieldset>
-  </div>
-</form>
-
 <hr/>
 <h3 class="heading-small">Summary of children’s details</h3>
 <!-- Full name -->
@@ -389,6 +280,114 @@ premises (Section 48(4) Children Act 1989).</label>
 
 <hr/>
 
+
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend>
+        <h1 class="heading-medium">
+        Nature of application
+        </h1>
+        <span class="body-text">What order(s) are you applying for? (tick all which apply)</span>
+      </legend>
+
+      <div class="multiple-choice" data-target="care-and-supervision">
+        <input id="radio-home-address" type="radio" name="radio-indent-group" value="Home">
+        <label for="radio-home-address">Care and supervision or other Part 4</label>
+      </div>
+
+      <div class="panel panel-border-narrow js-hidden" id="care-and-supervision">
+
+        <h2 class="heading-medium">
+          Care and supervision or other Part 4
+        </h2>
+
+        <div class="multiple-choice">
+          <input id="care" name="nationalities" type="checkbox" value="care">
+          <label for="care">Care</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="Supervision" name="Supervision" type="checkbox" value="Supervision">
+          <label for="Supervision">Supervision</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="Interim-care-order" name="Interim-care-order" type="checkbox" value="Interim care order">
+          <label for="Interim-care-order">Interim care order</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="Interim-supervision-order" name="Interim-supervision-order" type="checkbox" value="Interim-supervision-order">
+          <label for="Interim-supervision-order">Interim supervision order</label>
+        </div>
+
+
+        <div class="multiple-choice" data-target="others-2">
+          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
+          <label for="Others">Other</label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="others-2">
+          <label class="form-label" for="other-2">Please specify</label>
+          <textarea class="form-control" type="text" id="other-2y" name="other-2"></textarea>
+        </div>
+
+<div class="panel panel-border-narrow multiple-choice">
+<hr/>
+        <legend>
+          <h1 class="heading-small">
+
+          </h1>
+          <span class="body-text">Is the Local Authority considering adoption?</span>
+        </legend>
+
+        <div class="multiple-choice" >
+          <input id="radio-adoption" type="radio" name="radio-indent-group-1" value="yes">
+          <label for="radio-adoption">Yes</label>
+        </div>
+        <div class="multiple-choice" >
+          <input id="radio-adoption" type="radio" name="radio-indent-group-1" value="No">
+          <label for="radio-adoption">No</label>
+        </div>
+</div>
+
+
+</div>
+      <div class="multiple-choice" data-target="emergency-protection-order">
+        <input id="radio-other-address" type="radio" name="radio-indent-group" value="Other">
+        <label for="radio-other-address">Emergency Proetection</label>
+      </div>
+
+      <div class="panel panel-border-narrow js-hidden" id="emergency-protection-order">
+
+        <div class="multiple-choice">
+          <input id="emg-1" name="emg-1" type="checkbox" value="emg-1">
+          <label for="emg-1">information on the whereabouts of the child[ren]
+(Section 48(1) Children Act 1989).</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="emg-2" name="emg-2" type="checkbox" value="emg-2">
+          <label for="emg2">authorisation for entry of premises
+(Section 48(3) Children Act 1989).</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="emg-3" name="emg-3" type="checkbox" value="emg-3">
+          <label for="emg-3">authorisation to search for another child on the
+premises (Section 48(4) Children Act 1989).</label>
+        </div>
+
+        <div class="multiple-choice" data-target="others-3">
+          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
+          <label for="Others">Other</label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="others-3">
+          <label class="form-label" for="other-3">Please specify</label>
+          <textarea class="form-control" type="textarea" id="other-3" name="other-3"> </textarea>
+        </div>
+
+
+      </div>
+    </fieldset>
+  </div>
+</form>
 
 
 
