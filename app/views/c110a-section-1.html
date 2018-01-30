@@ -23,146 +23,119 @@
 
 
       <h1 class="heading-large">
-        Public Law - C110A Form
+        Is the application for urgent consideration?
       </h1>
-<h2 class="heading-small">Application for a care or supervision order and other orders under Part 4 of the Children Act 1989 or an Emergency Protection Order under section 44 of the Children Act 1989</h3>
+
+
+
+
+
+
+
+
+
+
 <hr/>
 
-<form action="c110a-section-1">
-<!-- Full name of Applicant -->
-<div class="form-group">
-  <label class="form-label" for="full-name-applicant">
-     Name of Applicant
-    <span class="form-hint">Local Aurhority </span>
-  </label>
-  <input type="text" class="form-control" id="full-name">
-</div>
-<!-- Respondent name -->
-<div class="form-group">
-  <label class="form-label" for="full-name-respondent">
-    Name of Respondent(s)
-    <span class="form-hint">Mother or Father </span>
-  </label>
-  <textarea type="text" class="form-control" id="respondent-name"></textarea>
-</div><hr/>
-
-
+<form>
   <div class="form-group">
     <fieldset>
 
       <legend>
         <h1 class="heading-small">
-        Nature of application
+          <span class="body-text">Is an urgent hearing required? </span>
+
         </h1>
-        <span class="body-text">What order(s) are you applying for? (tick all which apply)</span>
+        <span class="body-text">What order(s)</span>
       </legend>
 
       <div class="multiple-choice" data-target="care-and-supervision">
         <input id="radio-home-address" type="radio" name="radio-indent-group" value="Home">
-        <label for="radio-home-address">Care and supervision or other Part 4</label>
+        <label for="radio-home-address">Yes</label>
       </div>
 
       <div class="panel panel-border-narrow js-hidden" id="care-and-supervision">
 
         <h2 class="heading-medium">
-          Care and supervision or other Part 4
+    Is the urgent hearing for:
         </h2>
 
         <div class="multiple-choice">
           <input id="care" name="nationalities" type="checkbox" value="care">
-          <label for="care">Care</label>
+          <label for="care">Contested ICO</label>
         </div>
         <div class="multiple-choice">
           <input id="Supervision" name="Supervision" type="checkbox" value="Supervision">
-          <label for="Supervision">Supervision</label>
+          <label for="Supervision">EPO</label>
         </div>
         <div class="multiple-choice">
           <input id="Interim-care-order" name="Interim-care-order" type="checkbox" value="Interim care order">
-          <label for="Interim-care-order">Interim care order</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="Interim-supervision-order" name="Interim-supervision-order" type="checkbox" value="Interim-supervision-order">
-          <label for="Interim-supervision-order">Interim supervision order</label>
+          <label for="Interim-care-order">urgent preliminary Case Management Hearing</label>
         </div>
 
 
-        <div class="multiple-choice" data-target="others-2">
-          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-          <label for="Others">Other</label>
-        </div>
-        <div class="panel panel-border-narrow js-hidden" id="others-2">
-          <label class="form-label" for="other-2">Please specify</label>
-          <textarea class="form-control" type="text" id="other-2y" name="other-2"></textarea>
-        </div>
 
-<div class="panel panel-border-narrow multiple-choice">
-<hr/>
-        <legend>
-          <h1 class="heading-small">
 
-          </h1>
-          <span class="body-text">Is the Local Authority considering adoption?</span>
-        </legend>
 
-        <div class="multiple-choice" >
-          <input id="radio-adoption" type="radio" name="radio-indent-group-1" value="yes">
-          <label for="radio-adoption">Yes</label>
-        </div>
-        <div class="multiple-choice" >
-          <input id="radio-adoption" type="radio" name="radio-indent-group-1" value="No">
-          <label for="radio-adoption">No</label>
-        </div>
-</div>
 
 
 </div>
       <div class="multiple-choice" data-target="emergency-protection-order">
         <input id="radio-other-address" type="radio" name="radio-indent-group" value="Other">
-        <label for="radio-other-address">Emergency Proetection</label>
+        <label for="radio-other-address">No</label>
       </div>
 
       <div class="panel panel-border-narrow js-hidden" id="emergency-protection-order">
 
-        <div class="multiple-choice">
-          <input id="emg-1" name="emg-1" type="checkbox" value="emg-1">
-          <label for="emg-1">information on the whereabouts of the child[ren]
-(Section 48(1) Children Act 1989).</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="emg-2" name="emg-2" type="checkbox" value="emg-2">
-          <label for="emg2">authorisation for entry of premises
-(Section 48(3) Children Act 1989).</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="emg-3" name="emg-3" type="checkbox" value="emg-3">
-          <label for="emg-3">authorisation to search for another child on the
-premises (Section 48(4) Children Act 1989).</label>
-        </div>
 
-        <div class="multiple-choice" data-target="others-3">
-          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-          <label for="Others">Other</label>
-        </div>
-        <div class="panel panel-border-narrow js-hidden" id="others-3">
-          <label class="form-label" for="other-3">Please specify</label>
-          <textarea class="form-control" type="textarea" id="other-3" name="other-3"> </textarea>
-        </div>
+
+
 
 
       </div>
     </fieldset>
   </div>
-
+</form>
 
 <hr/>
-<h3 class="heading-small">Summary of children’s details</h3>
-<!-- Full name -->
+
+
+<h2> </h2>
+<h3 class="heading-small">Part A - All applications</h3>
+<!-- textarea-->
 <div class="form-group">
-  <label class="form-label" for="child-1-full-name">
-  Child 1 -  Full Name
-    <span class="form-hint">As shown on the birth certificate or passport</span>
+  <label class="form-label" for="full-name-respondent">
+    Set out the order(s)/directions sought
+    <span class="form-hint">Help Text is shown here </span>
   </label>
-  <input type="text" class="form-control" id="child-1-full-name">
+  <textarea type="text" class="form-control" id="respondent-name"></textarea>
+</div>
+<!-- textarea-->
+<div class="form-group">
+  <label class="form-label" for="full-name-respondent">
+    Set out the reasons for urgency
+    <span class="form-hint">Help Text is shown here </span>
+  </label>
+  <textarea type="text" class="form-control" id="respondent-name"></textarea>
+</div>
+<!-- Proposed timetable -->
+<div class="form-group">
+  <label class="form-label" for="proposed-timetable">
+  Proposed timetable
+    <span class="form-hint">The application should be considered within how many hours?</span>
+  </label>
+  <input type="text" class="form-control" id="proposed-timetable">
+</div>
+
+<!-- textarea-->
+<div class="form-group">
+  <label class="form-label" for="effort-made-give-respondent-notice">
+    What efforts have been made to put
+each respondent on notice of the
+application?
+    <span class="form-hint">Help Text is shown here </span>
+  </label>
+  <textarea type="text" class="form-control" id="effort-made-give-respondent-notice"></textarea>
 </div>
 
 
@@ -411,7 +384,7 @@ premises (Section 48(4) Children Act 1989).</label>
 
 
 
-</form>
+
 
 
     </div>

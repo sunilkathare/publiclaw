@@ -27,8 +27,6 @@
       </h1>
 <h2 class="heading-small">Application for a care or supervision order and other orders under Part 4 of the Children Act 1989 or an Emergency Protection Order under section 44 of the Children Act 1989</h3>
 <hr/>
-
-<form action="c110a-section-1">
 <!-- Full name of Applicant -->
 <div class="form-group">
   <label class="form-label" for="full-name-applicant">
@@ -46,7 +44,7 @@
   <textarea type="text" class="form-control" id="respondent-name"></textarea>
 </div><hr/>
 
-
+<form>
   <div class="form-group">
     <fieldset>
 
@@ -152,7 +150,7 @@ premises (Section 48(4) Children Act 1989).</label>
       </div>
     </fieldset>
   </div>
-
+</form>
 
 <hr/>
 <h3 class="heading-small">Summary of children’s details</h3>
@@ -273,6 +271,56 @@ premises (Section 48(4) Children Act 1989).</label>
       </div>
 
 <hr/>
+
+
+
+<script>
+
+
+var counter = 1;
+
+var limit = 3;
+
+function addInput(divName){
+
+     if (counter == limit)  {
+          alert("You have reached the limit of adding " + counter + " inputs");
+
+     }
+
+     else {
+
+          var newdiv = document.createElement('div');
+
+          newdiv.innerHTML = "Entry "  + " <br><input type='text' name='myInputs[]'>";
+
+          document.getElementById(divName).appendChild(newdiv);
+
+
+          var allegationTemplate = '<div id="describe-wrapper-allegation-4" class="form-group">                <label class="form-label-bold" for="allegation-4">                 Example 4                </label>                <textarea class="form-control"                                id="allegation-4"                                rows="3"                                name="unReasonableAllegation3"                                type="text"                                style="width: 100%">My wife ... </textarea>              </div>  ';
+
+                  document.getElementById(divName).appendChild(allegationTemplate);
+
+          counter++;
+
+     }
+
+}
+
+
+</script>
+
+
+<form method="POST">
+     <div id="dynamicInput">
+          Entry 1<br><input type="text" name="myInputs[]">
+
+     </div>
+     <input type="button" value="Add Child" onClick="addInput('dynamicInput');">
+
+</form>
+
+
 <div class="panel " data-target="Add-child">
 
 <div class="multiple-choice" data-target="Add-child" style=" ">
@@ -411,7 +459,7 @@ premises (Section 48(4) Children Act 1989).</label>
 
 
 
-</form>
+
 
 
     </div>

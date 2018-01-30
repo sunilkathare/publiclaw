@@ -13,3 +13,8 @@ module.exports = router
 router.get('/hello-world', function (req, res) {
   res.render('hello_world', {'message' : 'Hello world'});
 });
+
+router.get('/C110A-', function (req, res) {
+  var url = utils.getLatestRelease()
+  res.render('C110A-section-1', { 'releaseURL': url })
+})

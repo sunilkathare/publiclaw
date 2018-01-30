@@ -27,8 +27,6 @@
       </h1>
 <h2 class="heading-small">Application for a care or supervision order and other orders under Part 4 of the Children Act 1989 or an Emergency Protection Order under section 44 of the Children Act 1989</h3>
 <hr/>
-
-<form action="c110a-section-1">
 <!-- Full name of Applicant -->
 <div class="form-group">
   <label class="form-label" for="full-name-applicant">
@@ -46,7 +44,7 @@
   <textarea type="text" class="form-control" id="respondent-name"></textarea>
 </div><hr/>
 
-
+<form>
   <div class="form-group">
     <fieldset>
 
@@ -152,7 +150,7 @@ premises (Section 48(4) Children Act 1989).</label>
       </div>
     </fieldset>
   </div>
-
+</form>
 
 <hr/>
 <h3 class="heading-small">Summary of children’s details</h3>
@@ -273,6 +271,126 @@ premises (Section 48(4) Children Act 1989).</label>
       </div>
 
 <hr/>
+
+test
+<form method="POST" accept-charset="utf-8" class="form" id="form"
+              enctype="application/x-www-form-urlencoded">
+
+
+<p class="text">
+  Include examples of your wife's behaviour which affect you the most, and the most recent incidents. If you think your health has been affected, state how it's been affected.
+</p>
+
+<div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+      Don't include examples in which you're both at fault.
+  </strong>
+</div>
+
+<br>
+<p class="text">
+  You can describe how they've behaved over a period of time or use particular incidents. Try to include dates if you remember them.
+</p>
+
+  <div class="panel panel-border-wide">
+    <p class="text">
+        Your wife will be sent a copy of your divorce application, so you may want to avoid writing anything that will cause conflict between you. You can discuss your examples with your wife if you want to.
+    </p>
+  </div>
+
+<p class="text">
+  Provide enough examples to satisfy the court that you can't reasonably be expected to live with your wife.</p>
+
+  <div id="examples">
+<div id="describe-wrapper-allegation-1" class="form-group">
+  <label class="form-label-bold" for="allegation-1">
+   Example 1
+  </label>
+  <textarea class="form-control"
+                  id="allegation-1"
+                  rows="3"
+                  name="unReasonableAllegation1"
+                  type="text"
+                  style="width: 100%">
+My wife ... </textarea>
+</div>
+
+<div id="describe-wrapper-allegation-2" class="form-group">
+  <label class="form-label-bold" for="allegation-2">
+   Example 2
+  </label>
+  <textarea class="form-control"
+                  id="allegation-2"
+                  rows="3"
+                  name="unReasonableAllegation2"
+                  type="text"
+                  style="width: 100%">
+My wife ... </textarea>
+</div>
+
+<div id="describe-wrapper-allegation-3" class="form-group">
+  <label class="form-label-bold" for="allegation-3">
+   Example 3
+  </label>
+  <textarea class="form-control"
+                  id="allegation-3"
+                  rows="3"
+                  name="unReasonableAllegation3"
+                  type="text"
+                  style="width: 100%">
+My wife ... </textarea>
+</div>
+</div>
+<div id="addAllegationBtn" class="form-group>
+
+  Add new child
+
+    <a class="secondary-button" style="width:200px;" href="#">+ Add another example</a>
+    <a href="" class="secondary-button">Add more </a>
+
+
+</div>
+<script>
+function onLoadFunction() {
+    $(document).ready(function(){
+        $('#allegation-1').click(function() {
+            if ($('#allegation-1').val() == "My wife ... "){
+                $('#allegation-1').val("My wife ");
+            }
+        });
+        $('#allegation-2').click(function() {
+            if ($('#allegation-2').val() == "My wife ... "){
+                $('#allegation-2').val("My wife ");
+            }
+        });
+        $('#allegation-3').click(function() {
+            if ($('#allegation-3').val() == "My wife ... "){
+                $('#allegation-3').val("My wife ");
+            }
+        });
+        var allegationTemplate = '<div id="describe-wrapper-allegation-4" class="form-group">                <label class="form-label-bold" for="allegation-4">                 Example 4                </label>                <textarea class="form-control"                                id="allegation-4"                                rows="3"                                name="unReasonableAllegation3"                                type="text"                                style="width: 100%">My wife ... </textarea>              </div>  ';
+        $('#addAllegationBtn').click(function() {
+            $('#examples').append(allegationTemplate);
+        });
+    });
+}
+</script>
+
+
+
+            <div class="form-group">
+                <input id="continue-button" type="submit" class="button" value="Continue">
+            </div>
+
+                <a href="/save-return/goodbye/%2Fstatement-of-case%2Funreasonable%2Fsupporting-information">Save and close </a>
+
+
+        </form>
+
+
 <div class="panel " data-target="Add-child">
 
 <div class="multiple-choice" data-target="Add-child" style=" ">
@@ -411,11 +529,41 @@ premises (Section 48(4) Children Act 1989).</label>
 
 
 
-</form>
+
 
 
     </div>
   </div>
 </main>
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="/public/javascripts/details.polyfill.js"></script>
+<script src="/public/javascripts/dropzone.js"></script>
+<script src="/public/javascripts/application.js"></script>
+<script src="/public/javascripts/validation.js"></script>
+<script src="/public/javascripts/show-hide-content.js"></script>
+<!-- load and init() modules based on moj Heisenberg pattern -->
+<script src="/public/javascripts/module_loader.js"></script>
+<!-- modules -->
+<script src="/public/javascripts/modules/debug-panel.js"></script>
+<script src="/public/javascripts/modules/data-store.js"></script>
+<script src="/public/javascripts/modules/back-links.js"></script>
+<script src="/public/javascripts/modules/link-alerts.js"></script>
+<script src="/public/javascripts/modules/paid-case.js"></script>
+<script src="/public/javascripts/modules/form-routes.js"></script>
+<script src="/public/javascripts/modules/record-answers.js"></script>
+<script src="/public/javascripts/modules/display-values.js"></script>
+<script src="/public/javascripts/modules/task-list.js"></script>
+<script src="/public/javascripts/modules/task-dependencies.js"></script>
+<script src="/public/javascripts/modules/dependent-fields.js"></script>
+<script src="/public/javascripts/modules/doc-upload.js"></script>
+
+
+<!-- initialise -->
+<script type="text/javascript">
+  window.moj.init();
+</script>
+
 
 {% endblock %}
